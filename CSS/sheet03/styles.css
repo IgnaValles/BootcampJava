@@ -1,0 +1,32 @@
+#promo{
+    width: 90%;           
+    background-color: #f0f0f0; 
+    padding: 50px;
+    text-align: center;
+}
+
+#imagenes{
+    display: flex;
+    justify-content: center;
+}
+
+#foto1,#foto2,#foto3{
+    width:150px;
+    height:150px;
+    background-color: rgb(179, 178, 178);
+    padding:20px;
+    margin:20px;
+}
+
+#texto{
+    text-align: center;
+}
+
+#foot{
+    display: flex;
+}
+
+header{
+    display: flex;
+    width: 100%;
+}
