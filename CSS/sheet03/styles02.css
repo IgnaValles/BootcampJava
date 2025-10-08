@@ -1,0 +1,158 @@
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      font-family:"Ubuntu";
+    }
+
+    body{
+        background-color: yellow;
+    }
+
+    header{
+        display: flex;
+        justify-content: center;
+    }
+
+    header input{
+        margin-top: 2rem;
+        padding:5px 235px;
+        box-shadow: 0 0 10px 10px rgba(0,0,0,0.1);
+        margin-bottom: 2rem;
+    }
+
+    .pokedex-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 25px; 
+        justify-content: center;
+    }
+
+    .pokedex {
+        display: flex;
+        flex-direction: column;
+        margin-top:1rem;
+        box-shadow: 0 0 10px 10px rgba(0,0,0,0.1);
+        margin-bottom: 1rem;
+
+    }
+
+    .gray-container{
+        position: relative;
+        background-color: lightgray;
+        height:125px;
+        width:200px;
+    }
+
+    .gray-container img{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 25%;
+        
+    }
+
+    .gray-container .id{
+        position: absolute;
+        bottom:0px;
+        display: inline-block;
+        background-color: rgb(177, 176, 176);
+        color: brown;
+        text-align: center;
+        padding:0.2rem 0.6rem;
+    }
+
+    .white-container .nombre{
+        margin-left: 1rem;
+        margin-top: 0.5rem;
+        font-size: 1.2rem;
+    }
+
+    .white-container .tipo1{
+        display: inline-block;
+        margin-left:1rem;
+        border: 1px solid black;
+        color: brown;
+        border-radius: 4px;
+        padding:0.1rem 0.5rem;
+        margin-top: 0.3rem;
+        font-size: 0.6rem;
+
+    }
+
+    .white-container .tipo2{
+        display: inline-block;
+        margin-left:0.1rem;
+        border: 1px solid black;
+        color: brown;
+        border-radius: 4px;
+        padding:0.1rem 0.5rem;
+        font-size: 0.6rem;
+
+    }
+
+    .white-container .tipo2:empty{
+        border:none;
+    }
+
+
+    .white-container .evolucion{
+        display: inline-block;
+        margin-left: 1rem;
+        margin-top: 0.5rem;
+        padding-left: 5px;
+        color: brown;
+        box-shadow: -3px 0 brown;
+    }
+
+    .white-container .evolucion strong{
+        font-size: 1.3rem;
+    }
+
+    .white-container{
+        background-color: white;
+        height:125px;
+        width:200px;
+    }
+
+    .circulo-rojo {
+        position:absolute;
+        bottom:-75px;
+        left:-75px;
+        width: 150px;
+        height: 150px; 
+        background-color: red; 
+        border-radius: 50%;
+    }
+    
+    .circulo-rojo2 {
+        position:absolute;
+        bottom:-75px;
+        right:-75px;
+        width: 150px;
+        height: 150px; 
+        background-color: red; 
+        border-radius: 50%;
+    }
+
+    .oreja1{
+        position:absolute;
+        top:-50px;
+        right:-50px;
+        width: 100px;
+        height: 100px; 
+        background-color:black; 
+        transform: rotate(45deg); 
+    }
+
+    .oreja2{
+        position:absolute;
+        top:-50px;
+        left:-50px;
+        width: 100px;
+        height: 100px; 
+        background-color:black; 
+        transform: rotate(45deg); 
+    }
+
