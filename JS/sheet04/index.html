@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <section id="tareas">
+      <form id="form-tarea">
+        <input type="text" name="descripcion" placeholder="Nueva tarea" />
+        <button type="submit">Agregar</button>
+      </form>
+    </section>
+    <script>
+      const contenedor = document.getElementById("tareas");
+
+      const titulo = document.createElement("h2");
+      titulo.textContent = "Mis tareas";
+
+      const contador = document.createElement("span");
+      contador.textContent = "(0)";
+
+      titulo.appendChild(contador);
+
+      const listaTareas = document.createElement("ul");
+      listaTareas.id = "lista-tareas";
+
+      const tareas = ["Aprender JavaScript", "Practicar DOM"];
+
+      if (tareas.length === 0) {
+        const mensaje = document.createElement("p");
+        mensaje.textContent = "No hay tareas pendientes";
+        contenedor.appendChild(mensaje);
+      } else {
+        tareas.forEach((tarea) => {
+          const li = document.createElement("li");
+          li.classList.add("tarea");
+          li.textContent = tarea;
+          listaTareas.appendChild(li);
+          agregarBotones(li);
+        });
+
+        contador.textContent = `(${tareas.length})`;
+      }
+
+      contenedor.appendChild(titulo);
+      contenedor.appendChild(listaTareas);
+
+      function agregarBotones(tareaLi) {
+        const botonCompletar = document.createElement("button");
+        botonCompletar.textContent = "Completar";
+        botonCompletar.classList.add("boton-completar");
+
+        const botonEliminar = document.createElement("button");
+        botonEliminar.textContent = "Eliminar";
+        botonEliminar.classList.add("boton-eliminar");
+
+        tareaLi.appendChild(botonCompletar);
+        tareaLi.appendChild(botonEliminar);
+      }
+
+      const formulario = document.getElementById("form-tarea");
+
+      formulario.addEventListener("submit", function (evento) {
+        evento.preventDefault();
+
+        const input = formulario.elements["descripcion"];
+        const valor = input.value.trim();
+
+        if (valor === "") {
+          window.open(
+            "https://pbs.twimg.com/media/Gm-IGzBW4AAyy2z.png",
+            "_blank",
+            (width = "500"),
+            (height = "500")
+          );
+          return;
+        }
+
+        const nuevaTarea = document.createElement("li");
+        nuevaTarea.classList.add("tarea");
+        nuevaTarea.textContent = valor;
+        agregarBotones(nuevaTarea);
+
+        listaTareas.appendChild(nuevaTarea);
+
+        const totalTareas = listaTareas.children.length;
+        contador.textContent = `(${totalTareas})`;
+
+        input.value = "";
+      });
+    </script>
+  </body>
+</html>

@@ -1,149 +1,146 @@
 * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
-html, body {
-    height: 100%;
+html,
+body {
+  height: 100%;
 }
 
 header {
-
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-bottom: 5px;
-    
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 5px;
 }
 
-header h1{
-    margin-left: 20px;
+header h1 {
+  margin-left: 20px;
 }
 
 nav a {
-    margin-left: 15px;
-    text-decoration: none;
-    color: black;
+  margin-left: 15px;
+  text-decoration: none;
+  color: black;
 }
 
-nav a:hover{
-    text-decoration: underline;
+nav a:hover {
+  text-decoration: underline;
 }
 
-nav button{
-    margin-right:30px;
-    margin-left:20px;
-    background-color: white;
-    border-radius: 5px;
-    padding:5px 25px;
+nav button {
+  margin-right: 30px;
+  margin-left: 20px;
+  background-color: white;
+  border-radius: 5px;
+  padding: 5px 25px;
 }
 
-nav button:hover{
-    cursor: pointer;
-    background-color: lightblue;
+nav button:hover {
+  cursor: pointer;
+  background-color: lightblue;
 }
 
 body {
-      display: flex;
-      flex-direction: column;
-      min-height: 100vh;
-      font-family: Arial;
-    }
-
-#promo{
-    width: 100%;           
-    background-color: #f0f0f0; 
-    padding:100px 0px;
-   
-    text-align: center;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: Arial;
 }
 
-#promo p{
-    margin-top: 20px;
+#promo {
+  width: 100%;
+  background-color: #f0f0f0;
+  padding: 100px 0px;
+
+  text-align: center;
 }
 
-
-#promo button{
-    margin-top: 20px;
-    padding:10px 20px;
-    background-color: black;
-    color:white;
-    border-radius: 5px;
-    border:none;
+#promo p {
+  margin-top: 20px;
 }
 
-#promo button:hover{
-    cursor:pointer;
-    background-color: gray;
-    
+#promo button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+  border: none;
 }
 
-#imagenes{
-    display: flex;
-    justify-content: center;
-    margin-top: 30px;
-    
+#promo button:hover {
+  cursor: pointer;
+  background-color: gray;
 }
 
-#foto1,#foto2,#foto3{
-    width:250px;
-    height:400px;
-    padding:20px;
-    margin:20px 10px;
+#imagenes {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
 }
 
-#foto1 div{
-    background-color: black;
-    width:250px;
-    height: 250px;
+#foto1,
+#foto2,
+#foto3 {
+  width: 250px;
+  height: 400px;
+  padding: 20px;
+  margin: 20px 10px;
 }
 
-#foto2 div{
-    background-color: black;
-    width:250px;
-    height: 250px;
+#foto1 div {
+  background-color: black;
+  width: 250px;
+  height: 250px;
 }
 
-#foto3 div{
-    background-color: black;
-    width:250px;
-    height: 250px;
+#foto2 div {
+  background-color: black;
+  width: 250px;
+  height: 250px;
 }
 
-#imagenes p{
-    margin-top: 10px;
+#foto3 div {
+  background-color: black;
+  width: 250px;
+  height: 250px;
 }
 
-#imagenes a{
-    display: inline-block;
-    padding-top: 15px;
-    text-decoration: none;
-    color: black;
-    font-size: 0.75rem;
+#imagenes p {
+  margin-top: 10px;
 }
 
-#imagenes a:hover{
-    color:lightblue;
-    cursor:pointer;
-    text-decoration: underline;
+#imagenes a {
+  display: inline-block;
+  padding-top: 15px;
+  text-decoration: none;
+  color: black;
+  font-size: 0.75rem;
 }
 
-#texto{
-    text-align: center;
-    margin-top: 30px;
+#imagenes a:hover {
+  color: lightblue;
+  cursor: pointer;
+  text-decoration: underline;
 }
 
-#texto p{
-    margin-top: 20px;
+#texto {
+  text-align: center;
+  margin-top: 30px;
+}
+
+#texto p {
+  margin-top: 20px;
 }
 
 /* Footer */
 
-#foot{
-    background-color: lightgray;
+#foot {
+  background-color: lightgray;
 }
-
 
 #foot {
   padding: 40px;
@@ -153,9 +150,8 @@ body {
   color: black;
 }
 
-
-#foot h2{
-    margin-bottom: 20px;
+#foot h2 {
+  margin-bottom: 20px;
 }
 
 #foot h3 {
@@ -170,7 +166,6 @@ body {
   display: flex;
   flex-direction: column;
 }
-
 
 #foot ul {
   list-style: none;
@@ -190,5 +185,3 @@ body {
 #foot section a:hover {
   text-decoration: underline;
 }
-
-
