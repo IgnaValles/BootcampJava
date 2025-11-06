@@ -1,5 +1,6 @@
 import React from "react";
 import Pokedex from "./components/Pokedex";
+import "./style.css";
 
 const App: React.FC = () => {
   return (

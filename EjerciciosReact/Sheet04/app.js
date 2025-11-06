@@ -1,4 +1,4 @@
-const pokedexContainer = document.getElementById("pokedex");
+/*const pokedexContainer = document.getElementById("pokedex");
 const searchInput = document.getElementById("search");
 const cantidadPokemon = 150;
 const allPokemons = [];
@@ -64,4 +64,4 @@ searchInput.addEventListener("input", () => {
   renderPokemons(resultadosFiltrados);
 });
 
-cargarPokemons();
+cargarPokemons();*/
