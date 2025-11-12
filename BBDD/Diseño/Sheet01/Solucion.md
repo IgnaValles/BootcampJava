@@ -30,3 +30,8 @@ vende, sus clientes y los pedidos realizados. Cada pedido puede contener
 varios productos, y cada cliente puede realizar varios pedidos.
 
 ![Ejercicio4](ex04.png)
+
+ex05. Sistema Escolar (Intermedio)
+
+Un centro educativo quiere informatizar la gestión de sus cursos y las
+matrículas de los estudiantes. Cada estudiante puede apuntarse a varios cursos y un curso puede tener varios estudiantes.
